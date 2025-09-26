@@ -1,0 +1,186 @@
+#group=Widescreen
+#type=Gameshark
+#activation=EndFrame
+[Widescreen for Menus, 16:9 + Overscan Crop Only]
+# 0x80010082 checks for FrontEnd overlay availability.
+# Increase width for SetDefDispEnv - further Screen adjustments required.
+D0010082 00008001
+8004E210 00000280
+D0010082 00008001
+8004E238 00000280
+
+# Force the X Axis Screen adjustments in GoNonInterlaced, which runs on each FrontEnd menu change.
+D0010082 00008001
+80025C44 000000CC
+D0010082 00008001
+80025C46 0000240A
+D0010082 00008001
+80025C48 00000040
+D0010082 00008001
+80025C4A 0000240B
+D0010082 00008001
+80025C58 00005A01
+D0010082 00008001
+80025C5A 00000802
+
+# Space for adjustments required - replace an unused and empty police radio callout methods.
+80096804 0000000C
+80096806 0000A44A
+80096808 00000024
+8009680A 0000A44A
+8009680C 00000008
+8009680E 0000A44B
+80096810 00000020
+80096812 0000A44B
+80096814 00009717
+80096816 00000800
+
+
+
+#group=Widescreen
+#type=Gameshark
+#activation=EndFrame
+[Widescreen, 16:10]
+# X axis value, tweak it for custom aspect ratios.
+80085C80 0000EE00
+
+# Replace the original Y axis render adjustment with X axis.
+30085CC4 0000000C
+30085CD4 00000010
+30085CE4 00000014
+30085CFC 0000000C
+30085D00 00000010
+30085D08 00000014
+
+# Now, the Y axis is slightly stretched. Combined with the proper X axis values, we will adjust GeomScreen (or camera position) value to cover that.
+30082790 000000AA
+30083708 000000AA
+30083D58 000000AA
+30083D98 000000AA
+30084580 000000AA
+3008608C 000000AA
+3008629C 000000AA
+
+# Move the background sky texture in order to fix possible "voids" on the sky after GeomScreen tweak. Same method as the original 2-player mode adjustment for the sky render.
+300D17A0 00000084
+300D17C8 00000044
+
+
+
+#group=Widescreen
+#type=Gameshark
+#activation=EndFrame
+[Widescreen, 16:9]
+# X axis value, tweak it for custom aspect ratios.
+80085C80 0000D200
+
+# Replace the original Y axis render adjustment with X axis.
+30085CC4 0000000C
+30085CD4 00000010
+30085CE4 00000014
+30085CFC 0000000C
+30085D00 00000010
+30085D08 00000014
+
+# Now, the Y axis is slightly stretched. Combined with the proper X axis values, we will adjust GeomScreen (or camera position) value to cover that.
+30082790 000000AA
+30083708 000000AA
+30083D58 000000AA
+30083D98 000000AA
+30084580 000000AA
+3008608C 000000AA
+3008629C 000000AA
+
+# Move the background sky texture in order to fix possible "voids" on the sky after GeomScreen tweak. Same method as the original 2-player mode adjustment for the sky render.
+300D17A0 00000084
+300D17C8 00000044
+
+
+
+#group=Widescreen
+#type=Gameshark
+#activation=EndFrame
+[Widescreen, 19:9]
+# X axis value, tweak it for custom aspect ratios.
+80085C80 0000B200
+
+# Replace the original Y axis render adjustment with X axis.
+30085CC4 0000000C
+30085CD4 00000010
+30085CE4 00000014
+30085CFC 0000000C
+30085D00 00000010
+30085D08 00000014
+
+# Now, the Y axis is slightly stretched. Combined with the proper X axis values, we will adjust GeomScreen (or camera position) value to cover that.
+30082790 000000AA
+30083708 000000AA
+30083D58 000000AA
+30083D98 000000AA
+30084580 000000AA
+3008608C 000000AA
+3008629C 000000AA
+
+# Move the background sky texture in order to fix possible "voids" on the sky after GeomScreen tweak. Same method as the original 2-player mode adjustment for the sky render.
+300D17A0 00000084
+300D17C8 00000044
+
+
+
+#group=Widescreen
+#type=Gameshark
+#activation=EndFrame
+[Widescreen, 21:9]
+# X axis value, tweak it for custom aspect ratios.
+80085C80 0000A200
+
+# Replace the original Y axis render adjustment with X axis.
+30085CC4 0000000C
+30085CD4 00000010
+30085CE4 00000014
+30085CFC 0000000C
+30085D00 00000010
+30085D08 00000014
+
+# Now, the Y axis is slightly stretched. Combined with the proper X axis values, we will adjust GeomScreen (or camera position) value to cover that.
+30082790 000000AA
+30083708 000000AA
+30083D58 000000AA
+30083D98 000000AA
+30084580 000000AA
+3008608C 000000AA
+3008629C 000000AA
+
+# Move the background sky texture in order to fix possible "voids" on the sky after GeomScreen tweak. Same method as the original 2-player mode adjustment for the sky render.
+300D17A0 00000084
+300D17C8 00000044
+
+
+
+#group=Widescreen
+#type=Gameshark
+#activation=EndFrame
+[Widescreen, 32:9]
+# X axis value, tweak it for custom aspect ratios.
+80085C80 00006D00
+
+# Replace the original Y axis render adjustment with X axis.
+30085CC4 0000000C
+30085CD4 00000010
+30085CE4 00000014
+30085CFC 0000000C
+30085D00 00000010
+30085D08 00000014
+
+# Now, the Y axis is slightly stretched. Combined with the proper X axis values, we will adjust GeomScreen (or camera position) value to cover that.
+30082790 000000AA
+30083708 000000AA
+30083D58 000000AA
+30083D98 000000AA
+30084580 000000AA
+3008608C 000000AA
+3008629C 000000AA
+
+# Move the background sky texture in order to fix possible "voids" on the sky after GeomScreen tweak. Same method as the original 2-player mode adjustment for the sky render.
+300D17A0 00000084
+300D17C8 00000044
