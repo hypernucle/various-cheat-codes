@@ -1,0 +1,20 @@
+#group=Ungrouped
+#type=Gameshark
+#activation=EndFrame
+[Disable Sub-Divide Correction (PGXP Textures Fix)]
+300C6A05 00000005
+300C6A35 00000005
+300C6A65 00000005
+300C6A95 00000005
+
+
+
+#group=Ungrouped
+#type=Gameshark
+#activation=EndFrame
+[Skip Intro Movies]
+# 0x80010082 checks for FrontEnd overlay availability.
+D0010082 00008001
+3004E340 000000FF
+D0010082 00008001
+3004E344 00000000
