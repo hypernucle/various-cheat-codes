@@ -14,10 +14,96 @@
 #activation=EndFrame
 [Skip Intro Movies]
 # 0x80010082 checks for FrontEnd overlay availability.
+# No effect on Demo movies in the menu.
 D0010082 00008001
 3004E340 000000FF
 D0010082 00008001
 3004E344 00000000
+
+
+
+#group=Ungrouped
+#type=Gameshark
+#activation=EndFrame
+[Enable German Localization (Audio + Text)]
+# 0x80010082 checks for FrontEnd overlay availability.
+# Disable one of the forced English language assignments.
+D0010082 00008001
+3004E138 00000001
+D0010082 00008001
+3004E13F 00000010
+D0010082 00008001
+3004E146 00000082
+# Set the language ID.
+30115BF8 00000001
+
+
+
+#group=Ungrouped
+#type=Gameshark
+#activation=EndFrame
+[Enable French Localization (Audio + Text)]
+# 0x80010082 checks for FrontEnd overlay availability.
+# Disable one of the forced English language assignments.
+D0010082 00008001
+3004E138 00000002
+D0010082 00008001
+3004E13F 00000010
+D0010082 00008001
+3004E146 00000082
+# Set the language ID.
+30115BF8 00000002
+
+
+
+#group=Ungrouped
+#type=Gameshark
+#activation=EndFrame
+[Enable Spanish Localization (Text only)]
+# 0x80010082 checks for FrontEnd overlay availability.
+# Disable one of the forced English language assignments.
+D0010082 00008001
+3004E138 00000003
+D0010082 00008001
+3004E13F 00000010
+D0010082 00008001
+3004E146 00000082
+# Set the language ID.
+30115BF8 00000003
+
+
+
+#group=Ungrouped
+#type=Gameshark
+#activation=EndFrame
+[Enable Italian Localization (Text only)]
+# 0x80010082 checks for FrontEnd overlay availability.
+# Disable one of the forced English language assignments.
+D0010082 00008001
+3004E138 00000004
+D0010082 00008001
+3004E13F 00000010
+D0010082 00008001
+3004E146 00000082
+# Set the language ID.
+30115BF8 00000004
+
+
+
+#group=Ungrouped
+#type=Gameshark
+#activation=EndFrame
+[Enable Swedish Localization (Showcase + Text only)]
+# 0x80010082 checks for FrontEnd overlay availability.
+# Disable one of the forced English language assignments.
+D0010082 00008001
+3004E138 00000005
+D0010082 00008001
+3004E13F 00000010
+D0010082 00008001
+3004E146 00000082
+# Set the language ID.
+30115BF8 00000005
 
 
 
