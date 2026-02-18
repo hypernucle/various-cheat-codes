@@ -1,6 +1,61 @@
 #group=Ungrouped
 #type=Gameshark
 #activation=EndFrame
+[(8 MB RAM) GFX + FPS Tweaks]
+# 600% CPU overclock + 8 MB RAM mode required
+# Use the additional RAM space for Platform memory
+300DCEB4 21
+300DCEBC 71
+# Increase the OTSize for Player 2 & 1
+800B3DB4 1388
+800B3E24 1388
+# Increase ChunkFarZClipSq for Player 1
+80110204 0000
+80110206 000D
+# Increase PolyFarZClipSq for Player 1
+80110208 0000
+8011020A 0010
+# Increase LowDetailZClipSq for Player 1
+8011020C 0000
+8011020E 00FF
+# Increase LineFarZClipSq for Player 1
+80110210 0000
+80110212 00FF
+# Increase ChunkFarZClipSq for Player 2
+801102A0 0000
+801102A2 000D
+# Increase PolyFarZClipSq for Player 2
+801102A4 0000
+801102A6 0010
+# Increase LowDetailZClipSq for Player 2
+801102A8 0000
+801102AA 00FF
+# Increase LineFarZClipSq for Player 2
+801102AC 0000
+801102AE 00FF
+# Increase AllocatePrimitivesBuffer for Split-Screen mode
+300BEC90 04
+# Increase AllocatePrimitivesBuffer for One Player mode
+300BEC9C 04
+# Increase the medium LOD distance for car models
+800B04D4 00FF
+800B04D8 00FF
+# Load the full track chunk instances for Split-Screen mode
+3008BF8C 00
+# Display the track halo and additional light effects in Split-Screen mode
+3007ED10 00
+# Limit VSync in the menus
+800BF13C 0003
+800BF13E 2404
+# Limit VSync in the Pause menu
+800DDBD0 0003
+800DDBD2 2404
+
+
+
+#group=Ungrouped
+#type=Gameshark
+#activation=EndFrame
 [Disable Sub-Divide Correction (PGXP Textures Fix)]
 300C6A05 00000005
 300C6A35 00000005
