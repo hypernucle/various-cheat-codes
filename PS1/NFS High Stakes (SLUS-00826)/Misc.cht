@@ -422,3 +422,12 @@ D0010082 00008001
 30037B28 00000000
 D0010082 00008001
 30037B64 00000000
+
+
+
+#group=Ungrouped
+#type=Gameshark
+#activation=EndFrame
+[Always Display Full HUD for Police Cars]
+800D9DB0 67B7
+800D9DB2 0803
