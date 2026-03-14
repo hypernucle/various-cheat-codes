@@ -141,7 +141,7 @@ D1052EF6 00000000
 3004E146 00000082
 # Set the language ID.
 30115BF8 00000002
-# Show the localized Title Screen (ttl1.psh).
+# Show the localized Title Screen (ttl2.psh).
 D1052EF6 00000000
 800127B8 00007474
 D1052EF6 00000000
@@ -169,7 +169,7 @@ D1052EF6 00000000
 3004E146 00000082
 # Set the language ID.
 30115BF8 00000003
-# Show the localized Title Screen (ttl1.psh).
+# Show the localized Title Screen (ttl3.psh).
 D1052EF6 00000000
 800127B8 00007474
 D1052EF6 00000000
@@ -197,7 +197,7 @@ D1052EF6 00000000
 3004E146 00000082
 # Set the language ID.
 30115BF8 00000004
-# Show the localized Title Screen (ttl1.psh).
+# Show the localized Title Screen (ttl4.psh).
 D1052EF6 00000000
 800127B8 00007474
 D1052EF6 00000000
@@ -225,7 +225,7 @@ D1052EF6 00000000
 3004E146 00000082
 # Set the language ID.
 30115BF8 00000005
-# Show the localized Title Screen (ttl1.psh).
+# Show the localized Title Screen (ttl5.psh).
 D1052EF6 00000000
 800127B8 00007474
 D1052EF6 00000000
