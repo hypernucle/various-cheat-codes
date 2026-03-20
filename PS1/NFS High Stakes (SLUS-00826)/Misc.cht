@@ -83,6 +83,109 @@ D0010082 00008001
 #group=Ungrouped
 #type=Gameshark
 #activation=EndFrame
+[Custom Controller Layout]
+# Left Stick, Left: 		0000 8000
+# Left Stick, Right: 		0000 2000
+# Left Stick, Up: 			0000 1000
+# Left Stick, Down: 		0000 4000
+# Right Stick, Left: 		0000 0080
+# Right Stick, Right: 		0000 0020
+# Right Stick, Up: 			0000 0010
+# Right Stick, Down: 		0000 0040
+# -----
+# D-Pad Left: 				0080 0000
+# D-Pad Right: 				0020 0000
+# D-Pad Up: 				0010 0000
+# D-Pad Down: 				0040 0000
+# Triangle: 				1000 0000
+# Square: 					8000 0000
+# Cross: 					4000 0000
+# Circle: 					2000 0000
+# L1: 						0400 0000
+# L2: 						0100 0000
+# R1: 						0800 0000
+# R2: 						0200 0000
+# Select: 					0001 0000
+# -----
+# bytes 1 - 4: Analog (DualShock) pad
+# bytes 5 - 8: Digital (original) pad
+# Menu UI controller mappings is not connected to the real button mapping
+# Replaces the default mapping of Controller Layout A
+# 0x80052EF6 checks for FrontEnd overlay availability (gHelpShapes).
+# Turn Left (D-Pad Left / Analog Left)
+801220F0 0000
+801220F2 8000
+801220F4 0080
+801220F6 0000
+# Turn Right (D-Pad Right / Analog Right)
+801220FC 0000
+801220FE 2000
+80122100 0020
+80122102 0000
+# Accel. (R2)
+80122108 0200
+8012210A 0000
+8012210C 0200
+8012210E 0000
+# Brake (L2)
+80122114 0100
+80122116 0000
+80122118 0100
+8012211A 0000
+# Handbrake (Circle)
+80122120 2000
+80122122 0000
+80122124 2000
+80122126 0000
+# Shift Up (Square)
+8012212C 8000
+8012212E 0000
+80122130 8000
+80122132 0000
+# Shift Down (Cross)
+80122138 4000
+8012213A 0000
+8012213C 4000
+8012213E 0000
+# Camera + Display Off (R1)
+80122144 0800
+80122146 0000
+80122148 0800
+8012214A 0000
+# Look Back (Triangle)
+80122150 1000
+80122152 0000
+80122154 1000
+80122156 0000
+# Horn (D-Pad Up)
+8012215C 0010
+8012215E 0000
+80122160 0010
+80122162 0000
+# Siren (L1 + D-Pad Up, same as Horn)
+80122168 0010
+8012216A 0000
+8012216C 0010
+8012216E 0000
+# Police Menu (L1)
+80122174 0400
+80122176 0000
+80122178 0400
+8012217A 0000
+# Car Reset (Select)
+80122180 0001
+80122182 0000
+80122184 0001
+80122186 0000
+# Music Player (L1, only first 2 bytes of the button code)
+800D706C 0400
+800D7090 0400
+
+
+
+#group=Ungrouped
+#type=Gameshark
+#activation=EndFrame
 [Australian Title Screen]
 # 0x80052EF6 checks for FrontEnd overlay availability (gHelpShapes).
 # Show the localized Title Screen (ttl0.psh).
@@ -236,6 +339,37 @@ D1052EF6 00000000
 800127BE 00006873
 D1052EF6 00000000
 800127C0 00000000
+
+
+
+#group=Ungrouped
+#type=Gameshark
+#activation=EndFrame
+[Enable Russian Localization (CE v3+ only)]
+# 0x80052EF6 checks for FrontEnd overlay availability (gHelpShapes).
+# text.eng to text.rus
+80056DA8 0000722E 
+80056DAA 00007375
+# %sfont.pfn to %srfnt.pfn
+800562EE 00006672
+800562F0 0000746E
+# %stiny.pfn to %srtny.pfn
+D1052EF6 00000000
+8001141E 00007472
+D1052EF6 00000000
+80011420 0000796E
+# %stitle.pfn to %srtitl.pfn
+D1052EF6 00000000
+80011436 00007472
+D1052EF6 00000000
+80011438 00007469
+D1052EF6 00000000
+8001143A 00002E6C
+# Opponent split/distance indicator position fix
+800D5470 0000FFFD
+# Trophy Room - trophy description text field fix
+D1052EF6 00000000
+80041830 0000016A
 
 
 
