@@ -36,9 +36,6 @@
 # Increase LineFarZClipSq for Player 2
 801102AC 0000
 801102AE 00FF
-# Always show all track chunk objects at any distance
-8007EA18 00FF
-8007E844 0000
 # Prevent quad cuts on very close objects like trees (in limited cases)
 800C937C 0000
 800C9B80 0000
